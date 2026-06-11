@@ -1,1 +1,1 @@
-# SvgEditor_Charykova
+Чарыкова Наталия Олеговна
