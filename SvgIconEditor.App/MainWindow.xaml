@@ -25,6 +25,12 @@
                            VerticalAlignment="Center"
                            Margin="0,0,20,0"/>
 
+				<Button Content="Удалить"
+                        Width="95"
+                        Height="34"
+                        Margin="0,0,8,0"
+                        Click="DeleteSelected_Click"/>
+
 				<Button Content="Очистить"
                         Width="100"
                         Height="34"
@@ -72,7 +78,7 @@
 
 		<Grid>
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="260"/>
+				<ColumnDefinition Width="270"/>
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
 
@@ -133,6 +139,20 @@
                                FontSize="15"
                                Margin="0,0,0,18"/>
 
+					<TextBlock Text="Выбранный объект"
+                               FontWeight="Bold"
+                               FontSize="16"
+                               Margin="0,0,0,8"/>
+
+					<TextBlock x:Name="SelectedObjectText"
+                               Text="Объект не выбран"
+                               FontSize="14"
+                               Foreground="#FF4B5563"
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,18"/>
+
+					<Separator Margin="0,0,0,16"/>
+
 					<TextBlock Text="Цвета"
                                FontWeight="Bold"
                                FontSize="16"
@@ -184,7 +204,7 @@
 
 					<Separator Margin="0,18,0,18"/>
 
-					<TextBlock Text="Подсказка"
+					<TextBlock Text="Управление"
                                FontWeight="Bold"
                                FontSize="16"
                                Margin="0,0,0,8"/>
@@ -192,7 +212,7 @@
 					<TextBlock TextWrapping="Wrap"
                                Foreground="#FF374151"
                                FontSize="14"
-                               Text="Это вторая версия редактора. Теперь можно менять цвета линии, заливки и фона, а также экспортировать рисунок в SVG."/>
+                               Text="В режиме «Выбор» нажми на объект и перемещай его мышкой. Кнопка «Удалить» или клавиша Delete удаляет выбранный объект."/>
 
 				</StackPanel>
 			</Border>
